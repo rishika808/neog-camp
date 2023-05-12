@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
     <h1>Rishikasaboo's component library</h1>
@@ -15,6 +16,8 @@
         <h1>This is the biggest heading</h1>
         <h2>This is the second biggest heading</h2>
         <p>Let me show you the normal text.This is free flowing and will wrap at the end like a paragraph</p>
+        <p>This paragraph will have a bold text
+        <strong>bold</strong>text</p>
         <small>This is relatively smaller text</small>
 
         <hr>
@@ -22,39 +25,40 @@
         <h2>@container</h2>
 
         <h3>Fluid container</h3>
-        <div>This is a fluid container and it will go till the end of the page</div>
+        <div class="container ">This is a fluid container and it will go till the end of the page</div>
 
         <h3>Fluid container</h3>
-        <div>This is a centered container and it will go till the specified width</div>
+        <div class="container container-center">This is a centered container and it will go till the specified width</div>
 
         <hr>
 
         <h2>@Links</h2>
-        <a href="/">Primary link</a>
-        <a href="/">Secondary link</a>
+        <a class="link link-Primary" href="/">Primary link</a>
+        <a class="link link-Secondary" href="/">Secondary link</a>
 
         <hr>
 
         <h2>@Lists</h2>
 
         <h3>Unordered list</h3>
+        <p>This list will not have the bullet</p>
 
-        <ul>
+        <ul class="non-bullet">
             <li>Item one</li>
             <li>Item Two</li>
             <li>Item Three</li>
       </ul>
 
       <h3>Unordered inline list</h3>
-      <ul>
-        <li>Inline item one</li>
-        <li>Inline item two</li>
-        <li>Inline item three</li>
+      <ul class="non-bullet">
+        <li class="List-item-inline">Inline item one</li>
+        <li class="List-item-inline">Inline item two</li>
+        <li class="List-item-inline">Inline item three</li>
       </ul>
 
       <h3>Reverse ordered list</h3>
 
-      <ol>
+      <ol reversed>
         <li>Milk</li>
         <li>eggs</li>
         <li>bread</li>
@@ -64,18 +68,18 @@
 
       <h2>@nav</h2>
 
-      <nav>
-         <div>JandBrand</div>
-         <ul>
-            <li>
-                <a href="/">home</a>
+      <nav class="navigation container">
+         <div class="nav-brand">JandBrand</div>
+         <ul class="list-non-bullet nav-pills">
+            <li class="List-item-inline">
+                <a class="Link Link-active" href="/">home</a>
             </li>
-            <li>
-                <a href="/">product</a>
+            <li class="List-item-inline">
+                <a class="Link" href="/">product</a>
 
             </li>
-            <li>
-                <a href="/">about</a>
+            <li class="List-item-inline">
+                <a class="Link" href="/">about</a>
             </li>
 
          </ul>
@@ -85,23 +89,27 @@
       <hr>
 
       <h2>@header</h2>
-      <header>
+      <header class="hero">
         <img src="images/react.jpeg/" alt="This is an image">
-        <h1>Heading inside hero</h1>
+        <h1 class="hero-heading">Heading inside hero</h1>
       </header>
 
       <hr>
 
       <h2>@Section</h2>
       
-      <section>
-        <h3>White section</h3>
-      <p>This will go end to end with some margin at both sides</p>
+      <section class="section">
+        <div class="container container-center">
+        <h1>White section</h1>
+      <p>We are an open community of developers, technical writers, and learners building resources for a better Web, regardless of brand, browser, or platform. Anyone can contribute, and each person who does contribute makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.</p>
+      </div>
 
       </section>
-      <section>
-        <h3>off White section</h3>
-      <p>This will have grey background</p>
+      <section class="section OW">
+        <div class="container container-center">
+        <h1>off White section</h1>
+      <p>We are an open community of developers, technical writers, and learners building resources for a better Web, regardless of brand, browser, or platform. Anyone can contribute, and each person who does contribute makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.</p>
+      </div>
 
       </section>
 
@@ -109,12 +117,25 @@
 
       <h2>@footer</h2>
 
-      <footer>
-        <div>Some small heading inside footer</div>
-        <ul>
-            <li>Socialone</li>
-            <li>Socialtwo</li>
-            <li>Socialone</li>
+      <footer class="footer container">
+        <div class="footer-header">Some small heading inside footer</div>
+        <ul class="social-Links list-non-bullet">
+            <li class="List-item-inline">
+              <a class="Link" href="/">Socialone
+
+              </a>
+            </li>
+            <li class="List-item-inline">
+              <a  class="Link" href="/">Socialtwo
+
+              </a>
+            </li>
+            <li class="List-item-inline">
+              <a  class="Link" href="/">Socialthree
+
+              </a>
+            </li>
+            
         </ul>
       </footer>
 
